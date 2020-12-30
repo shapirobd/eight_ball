@@ -1,0 +1,14 @@
+.Tracker-col {
+	display: inline-block;
+	width: 33%;
+}
+
+.Tracker-green {
+	color: green;
+}
+.Tracker-goldenrod {
+	color: goldenrod;
+}
+.Tracker-red {
+	color: red;
+}
