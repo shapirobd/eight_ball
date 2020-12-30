@@ -9,8 +9,6 @@ const EightBall = ({ answers }) => {
 		setColor(answers[rand].color);
 		return answers[rand].msg;
 	};
-	console.log(color);
-	console.log(text);
 	return (
 		<div
 			className={`EightBall EightBall-${color}`}
