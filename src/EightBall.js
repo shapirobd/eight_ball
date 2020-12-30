@@ -12,18 +12,30 @@ const EightBall = ({ answers }) => {
 	const click = () => {
 		const rand = Math.floor(Math.random() * answers.length);
 		const newColor = answers[rand].color;
+		const func = setFunctions[newColor];
+		update(newColor, rand, func);
+	};
+
+	const update = (newColor, rand, func) => {
 		setColor(newColor);
 		setText(answers[rand].msg);
-		const func = setFunctions[newColor];
 		func(records[newColor] + 1);
 	};
 
 	const reset = () => {
 		setText("Think of a Question");
 		setColor("black");
+		resetCounters();
+		resetRecords();
+	};
+
+	const resetCounters = () => {
 		setGreenCount(0);
 		setGoldenrodCount(0);
 		setRedCount(0);
+	};
+
+	const resetRecords = () => {
 		records.green = 0;
 		records.goldenrod = 0;
 		records.red = 0;
