@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
+import logo from "../logo.svg";
 import EightBall from "./EightBall";
-import "./App.css";
+import "../stylesheets/App.css";
 
 function App() {
 	const answers = [

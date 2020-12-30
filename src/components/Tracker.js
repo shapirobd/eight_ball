@@ -1,5 +1,5 @@
 import React from "react";
-import "./Tracker.css";
+import "../stylesheets/Tracker.css";
 
 const Tracker = ({ records }) => {
 	return (

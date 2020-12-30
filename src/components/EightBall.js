@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Tracker from "./Tracker";
-import "./EightBall.css";
+import "../stylesheets/EightBall.css";
 
 const EightBall = ({ answers }) => {
 	const [color, setColor] = useState("black");
